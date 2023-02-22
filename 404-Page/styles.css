@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+body {
+  font-family: "Space Mono", monospace;
+  height: 100vh;
+  overflow: auto;
+  font-size: 14px;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 4.5rem;
+  line-height: 7.6rem;
+}
+
+.logo {
+  font-family: "Inconsolata", monospace;
+  font-size: 24px;
+}
+
+.hero-description {
+  font-size: 1.71rem;
+  line-height: 2.85rem;
+}
+
+.primary-button {
+  background-color: #333333;
+  text-decoration: none;
+  color: #fff;
+  height: 68px;
+  width: 216px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2;
+}
+
+.primary-button:hover {
+  background-color: #fff;
+  border: 1px solid #333333;
+  color: #333333;
+}
+
+.page-footer {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+}
