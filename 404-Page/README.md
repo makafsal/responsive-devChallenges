@@ -36,22 +36,22 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](![image](https://user-images.githubusercontent.com/9197089/220591365-80811d3d-5610-41de-b7e9-91db2397f3e3.png))
 
 Introduce your projects by taking a screenshot or a gif. Try to tell visitors a story about your project by answering:
 
-- Where can I see your demo?
-- What was your experience?
-- What have you learned/improved?
-- Your wisdom? :)
+- You can see the demo [here](https://four04-page.onrender.com/)
+- As a professional this challenge felt pretty easy
+- I tried to stick on sematic HTML as much as possible and minimal CSS.
+- Minor projects can give many wisdoms to our expertise, even it is a small challenge try to attend and make the first step.
 
 ### Built With
 
 <!-- This section should list any major frameworks that you built your project using. Here are a few examples.-->
 
-- [React](https://reactjs.org/)
-- [Vue.js](https://vuejs.org/)
-- [Tailwind](https://tailwindcss.com/)
+- HTML
+- CSS
+- [Bootstrap](https://getbootstrap.com/)
 
 ## Features
 
@@ -64,12 +64,10 @@ This application/site was created as a submission to a [DevChallenges](https://d
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For exmpale -->
 
-- [Steps to replicate a design with only HTML and CSS](https://devchallenges-blogs.web.app/how-to-replicate-design/)
-- [Node.js](https://nodejs.org/)
-- [Marked - a markdown parser](https://github.com/chjj/marked)
+- Clone the repository
+- Open index.html file from 404-Page folder in a browser
 
 ## Contact
 
-- Website [your-website.com](https://{your-web-site-link})
-- GitHub [@your-username](https://{github.com/your-usermame})
-- Twitter [@your-twitter](https://{twitter.com/your-username})
+- GitHub [@makafsal](https://github.com/makafsal)
+- LinkedIn [@afsal-k](https://www.linkedin.com/in/afsal-k-950b20135/)
