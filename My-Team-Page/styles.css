@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+:root {
+  --pt-serif: "PT Serif", serif;
+}
+
+.float-right {
+  float: right;
+}
+
+body {
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+}
+
+.page-title {
+  font-family: var(--pt-serif);
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.page-sub-title {
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.page-description {
+  font-size: 18px;
+  line-height: 30px;
+  margin-top: 1rem;
+}
+
+.team-card {
+  width: calc(100% - 4rem);
+}
+
+.team-card-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.team-card-img {
+  display: inline-flex;
+  width: 100%;
+  height: 500px;
+  background-position: center;
+  background-size: cover;
+  transition: all 0.15s ease-in;
+}
+
+.team-card-img.a {
+  background-image: url("./images/photo1.png");
+}
+
+.team-card-img.b {
+  background-image: url("./images/photo2.png");
+}
+
+.team-card-img.c {
+  background-image: url("./images/photo3.png");
+}
+
+.team-card-img.d {
+  background-image: url("./images/photo4.png");
+}
+
+.team-card-img.e {
+  background-image: url("./images/photo5.png");
+}
+
+.team-card-img.f {
+  background-image: url("./images/photo6.png");
+}
+
+.team-card:hover .team-card-img {
+  transform: scale(1.05);
+}
+
+.team-card-label {
+  width: 15px;
+  display: inline-flex;
+  position: relative;
+  text-transform: uppercase;
+  transition: all 0.15s ease-in;
+}
+
+.team-card:hover .team-card-label {
+  font-weight: 600;
+  letter-spacing: 3px;
+}
+
+.team-card-label > span {
+  transform: rotate(90deg);
+  position: absolute;
+  width: 100%;
+  white-space: nowrap;
+  margin-left: 10px;
+  font-family: var(--pt-serif);
+  text-transform: uppercase;
+}
+
+.team-card-title {
+  font-weight: 600;
+  font-size: 18px;
+  margin-top: 15px;
+  transition: all 0.15s ease-in;
+}
+
+.team-card:hover .team-card-title {
+  border-left: 5px solid;
+  padding-left: 8px;
+}
+
+.page-footer {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 1024px) {
+  .team-card {
+    width: calc(100% - 1rem);
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sm-float-right {
+    float: right;
+  }
+}
