@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@500;700&display=swap");
+
+:root {
+  --font-lora: "Lora", serif;
+  --animation-val: all 0.15s ease-in;
+  --color-primary: #181719;
+  --color-white: #ffffff;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-lora);
+}
+
+.hero {
+  background-color: var(--color-primary);
+  height: 100vh;
+  color: var(--color-white);
+  overflow: auto;
+}
+
+.hero-text-section {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-para {
+  font-size: 24px;
+}
+
+.ic-link-primary {
+  color: var(--color-white);
+  text-decoration: none;
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+}
+
+.ic-link-primary:hover {
+  color: var(--color-white);
+}
+
+.ic-link-primary > span {
+  margin-left: 5px;
+}
+
+.ic-nav-link {
+  text-decoration: none;
+  color: var(--color-white);
+  font-size: 18px;
+  margin: 0 35px;
+  position: relative;
+}
+
+.ic-link-primary::after,
+.ic-nav-link::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background-color: var(--color-white);
+  margin-top: 5px;
+  position: absolute;
+  left: 0;
+  transition: var(--animation-val);
+}
+
+.ic-nav-link:hover,
+.ic-nav-link:active,
+.ic-nav-link:focus {
+  color: var(--color-white);
+}
+
+.nav-item.active > .ic-nav-link {
+  font-weight: 700;
+}
+
+.nav-item.active > .ic-nav-link::after {
+  width: 100%;
+}
+
+.ic-link-primary:hover::after,
+.ic-nav-link:hover::after {
+  width: 100%;
+}
+
+.author-card {
+  position: absolute;
+  bottom: 0;
+  right: 2rem;
+  background-color: #181719;
+  padding: 30px 10rem 30px 30px;
+  width: 30rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  bottom: -5rem;
+}
+
+.user-card-title {
+  margin-left: 1rem;
+}
+
+.user-card-title-text {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.user-card-title-label {
+  font-size: 12px;
+  color: #828282;
+  font-weight: 500;
+}
+
+.user-card-body {
+  display: flex;
+  flex-direction: row;
+}
+
+.user-card-body > img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+.user-card-desc {
+  font-weight: 700;
+  font-size: 24px;
+  font-family: var(--font-lora);
+}
+
+.page-footer {
+  text-align: center;
+  margin-top: 10rem;
+  padding: 10px;
+}
+
+.page-footer > a {
+  color: #a9a9a9;
+  text-decoration: none;
+}
+
+/* Nav overrides */
+.navbar-light .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.55%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: initial;
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    background-color: var(--color-primary);
+    /* display: flex; */
+    /* justify-content: center !important; */
+    /* align-items: center; */
+    z-index: 999;
+  }
+
+  .navbar-nav {
+    display: inline-flex;
+    /* 
+    margin-left: 50%; */
+    margin-top: 50%;
+    /* transform: translateY(-50%); */
+    /* text-align: center */
+  }
+
+  .ic-nav-link {
+    margin: 0;
+  }
+
+  .nav-item {
+    margin-bottom: 15px;
+  }
+
+  .ic-nav-close {
+    position: absolute;
+    right: 30px;
+    top: 30px;
+  }
+
+  .author-card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .user-card-body > img {
+    width: 50px;
+    height: 50px;
+  }
+
+  .user-card-desc {
+    font-size: 18px;
+  }
+
+  .hero-para {
+    font-size: 14px;
+  }
+
+  .author-card {
+    right: 1rem;
+  }
+}

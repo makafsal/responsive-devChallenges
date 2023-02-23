@@ -5,3 +5,4 @@ There are 8 projects to demonstrate my ability in responsive web development. Th
 
 1. [404 Page](https://github.com/makafsal/responsive-devChallenges/tree/main/404-Page)
 2. [My Team Page](https://github.com/makafsal/responsive-devChallenges/tree/main/My-Team-Page)
+3. [Interior Consultant Home](https://github.com/makafsal/responsive-devChallenges/tree/main/Interior-Consultant-Page)
