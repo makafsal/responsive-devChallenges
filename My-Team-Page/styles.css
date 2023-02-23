@@ -131,10 +131,6 @@ body {
 }
 
 @media screen and (max-width: 425px) {
-  .sm-float-right {
-    float: right;
-  }
-
   .team-card-img {
     height: 205px;
   }
