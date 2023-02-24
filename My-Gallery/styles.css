@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+:root {
+  --easeIn-15: all 0.15s ease-in;
+  --boxShadow-35: 0px 10px 20px rgb(0 0 0 / 35%);
+  --boxShadow-10: 0px 10px 20px rgb(0 0 0 / 10%);
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  color: #4e5150;
+  font-weight: 600;
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: initial;
+}
+
+.text-gray {
+  color: #a9a9a9;
+}
+
+.bg-gray {
+  background-color: #e5e5e5;
+}
+
+.color-grey {
+  color: #bdbdbd;
+}
+
+.border-radius-12 {
+  border-radius: 12px;
+}
+
+.profile-img-card {
+  background-image: url("./images/profilePhoto.png");
+  width: 150px;
+  height: 150px;
+  background-position: center;
+  background-size: cover;
+  border-radius: 16px;
+  transition: var(--easeIn-15);
+}
+
+.profile-img-card:hover {
+  cursor: pointer;
+  box-shadow: var(--boxShadow-35);
+}
+
+.status-card {
+  cursor: pointer;
+  transition: var(--easeIn-15);
+}
+
+.status-card:hover {
+  background-color: #f2994a;
+  box-shadow: var(--boxShadow-35);
+}
+
+.status-card:hover * {
+  color: #ffffff !important;
+}
+
+.mg-image-holder {
+  height: 407px;
+  overflow: hidden;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: var(--boxShadow-10);
+  border-radius: 12px;
+  cursor: pointer;
+  transition: var(--easeIn-15);
+  position: relative;
+}
+
+.mg-image-detail {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(242 153 74 / 80%);
+  display: inline-flex;
+  color: #ffffff;
+  opacity: 0;
+  transition: var(--easeIn-15);
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.mg-image-holder:hover > .mg-image-detail {
+  opacity: 1;
+}
+
+.mg-image-holder:hover {
+  box-shadow: var(--boxShadow-35);
+}
+
+.mg-image-holder.a {
+  background-image: url("./images/photo1.png");
+}
+
+.mg-image-holder.b {
+  background-image: url("./images/photo2.png");
+}
+
+.mg-image-holder.c {
+  background-image: url("./images/photo3.png");
+}
+
+.mg-image-holder.d {
+  background-image: url("./images/photo_4.png");
+}
+
+.mg-image-holder.e {
+  background-image: url("./images/photo5.png");
+}
+
+.mg-image-holder.f {
+  background-image: url("./images/photo6.png");
+}
+
+.page-footer {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 20px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .mg-image-holder {
+    height: 250px;
+  }
+
+  .mg-image-detail {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+    .mg-image-holder {
+      height: 125px;
+    }
+  }
