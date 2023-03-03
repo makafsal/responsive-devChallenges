@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="./styles.css" rel="stylesheet">
+  <title>Checkout Page | Afsal K</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="py-5">
+      <h1 class="color-ternary">Checkout</h1>
+    </header>
+    <article>
+      <div class="row">
+        <!-- Mobile Cart -->
+        <div class="col-lg-6 d-xl-none d-lg-none d-block mb-5">
+          <div class="bg-shade p-4 cart-card">
+
+            <div class="d-flex flex-column">
+              <div class="d-inline-flex flex-row">
+                <img class="cart-img" src="./images/photo1.png" alt="">
+                <div class="d-inline-flex flex-column ms-3 justify-content-between">
+                  <div class="d-inline-flex flex-column">
+                    <div class="color-ternary">Vintage Backbag</div>
+                    <div class="mt-2">
+                      <span class="color-highlight">$54.99</span><small
+                        class="ms-2 text-decoration-line-through color-ternary">$94.99</small>
+                    </div>
+                  </div>
+
+                  <div class="d-inline-flex">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <button class="input-group-text cart-left-btn bg-white border-end-0 color-shady" id="post">
+                          <span class="material-icons">remove</span>
+                        </button>
+                      </div>
+                      <input type="number"
+                        class="form-control border-start-0 border-end-0 text-center hide-number-controls" value="1"
+                        placeholder="Quantity.." aria-label="Postal Code" aria-describedby="post">
+                      <div class="input-group-append">
+                        <button class="input-group-text cart-right-btn bg-white border-start-0 color-shady" id="post">
+                          <span class="material-icons">add</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column mt-4 pb-5">
+              <div class="d-inline-flex flex-row">
+                <img class="cart-img" src="./images/photo2.png" alt="">
+                <div class="d-inline-flex flex-column ms-3 justify-content-between">
+                  <div class="d-inline-flex flex-column">
+                    <div class="color-ternary">Levi Shoes</div>
+                    <div class="mt-2">
+                      <span class="color-highlight">$74.99</span><small
+                        class="ms-2 text-decoration-line-through color-ternary">$124.99</small>
+                    </div>
+                  </div>
+
+                  <div class="d-inline-flex">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <button class="input-group-text cart-left-btn bg-white border-end-0 color-shady" id="post">
+                          <span class="material-icons">remove</span>
+                        </button>
+                      </div>
+                      <input type="number"
+                        class="form-control border-start-0 border-end-0 text-center hide-number-controls" value="1"
+                        placeholder="Quantity.." aria-label="Postal Code" aria-describedby="post">
+                      <div class="input-group-append">
+                        <button class="input-group-text cart-right-btn bg-white border-start-0 color-shady" id="post">
+                          <span class="material-icons">add</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="list-group list-group-flush border-top mt-5">
+              <li class="list-group-item bg-transparent">
+                <span>Shipping</span>
+                <span class="float-end">$19</span>
+              </li>
+              <li class="list-group-item bg-transparent">
+                <span>Total</span>
+                <span class="float-end">$148.98</span>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <form>
+            <div>
+              <h5>Contact information</h5>
+              <label for="mail">E-mail</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-transparent border-end-0 color-shady" id="mail">
+                    <span class="material-icons">mail</span>
+                  </span>
+                </div>
+                <input type="mail" class="form-control border-start-0" placeholder="Enter your email..."
+                  aria-label="Email" aria-describedby="mail">
+              </div>
+            </div>
+            <div class="mt-3">
+              <label for="phone">Phone</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-transparent border-end-0 color-shady" id="phone">
+                    <span class="material-icons">phone</span>
+                  </span>
+                </div>
+                <input type="text" class="form-control border-start-0" placeholder="Enter your phone..."
+                  aria-label="Phone" aria-describedby="phone">
+              </div>
+            </div>
+
+            <div class="mt-5">
+              <h5>Shipping address</h5>
+              <label for="name">Full name</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-transparent border-end-0 color-shady" id="name">
+                    <span class="material-icons">account_circle</span>
+                  </span>
+                </div>
+                <input type="text" class="form-control border-start-0" placeholder="Your full name..."
+                  aria-label="Full Name" aria-describedby="name">
+              </div>
+            </div>
+            <div class="mt-3">
+              <label for="address">Address</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-transparent border-end-0 color-shady" id="address">
+                    <span class="material-icons">home</span>
+                  </span>
+                </div>
+                <input type="text" class="form-control border-start-0" placeholder="Your address..."
+                  aria-label="Address" aria-describedby="address">
+              </div>
+            </div>
+            <div class="mt-3">
+              <label for="city">City</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text bg-transparent border-end-0 color-shady" id="city">
+                    <span class="material-icons">location_city</span>
+                  </span>
+                </div>
+                <input type="text" class="form-control border-start-0" placeholder="Your city..." aria-label="City"
+                  aria-describedby="city">
+              </div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-lg-6">
+                <label for="country">Country</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-transparent border-end-0 color-shady" id="country">
+                      <span class="material-icons">public</span>
+                    </span>
+                  </div>
+                  <!-- <input type="text" class="form-control border-start-0" placeholder="Your country..."
+                  aria-label="Country" aria-describedby="country"> -->
+                  <select class="form-select border-start-0" aria-label="Default select example">
+                    <option selected disabled>Your country...</option>
+                    <option value="1">Country 1</option>
+                    <option value="2">Country 2</option>
+                    <option value="3">Country 3</option>
+                  </select>
+
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <label for="post">Postal code</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-transparent border-end-0 color-shady" id="post">
+                      <span class="material-icons">markunread_mailbox</span>
+                    </span>
+                  </div>
+                  <input type="text" class="form-control border-start-0" placeholder="Your postal code..."
+                    aria-label="Postal Code" aria-describedby="post">
+                </div>
+              </div>
+            </div>
+            <div class="mt-3 form-check">
+              <input class="form-check-input" type="checkbox" value="" id="save-text">
+              <label class="form-check-label" for="save-text">
+                Save this information for next time
+              </label>
+            </div>
+
+            <div class="mt-3 text-end">
+              <button class="btn btn-lg btn-orange">Continue</button>
+            </div>
+          </form>
+        </div>
+
+        <!-- Cart -->
+        <div class="col-lg-6 px-5 d-xl-block d-lg-block d-none">
+          <div class="bg-shade p-4 cart-card">
+
+            <div class="d-flex flex-column">
+              <div class="d-inline-flex flex-row">
+                <img class="cart-img" src="./images/photo1.png" alt="">
+                <div class="d-inline-flex flex-column ms-3 justify-content-between">
+                  <div class="d-inline-flex flex-column">
+                    <div class="color-ternary">Vintage Backbag</div>
+                    <div class="mt-2">
+                      <span class="color-highlight">$54.99</span><small
+                        class="ms-2 text-decoration-line-through color-ternary">$94.99</small>
+                    </div>
+                  </div>
+
+                  <div class="d-inline-flex">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <button class="input-group-text cart-left-btn bg-white border-end-0 color-shady" id="post">
+                          <span class="material-icons">remove</span>
+                        </button>
+                      </div>
+                      <input type="number"
+                        class="form-control border-start-0 border-end-0 text-center hide-number-controls" value="1"
+                        placeholder="Quantity.." aria-label="Postal Code" aria-describedby="post">
+                      <div class="input-group-append">
+                        <button class="input-group-text cart-right-btn bg-white border-start-0 color-shady" id="post">
+                          <span class="material-icons">add</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex flex-column mt-4 pb-5">
+              <div class="d-inline-flex flex-row">
+                <img class="cart-img" src="./images/photo2.png" alt="">
+                <div class="d-inline-flex flex-column ms-3 justify-content-between">
+                  <div class="d-inline-flex flex-column">
+                    <div class="color-ternary">Levi Shoes</div>
+                    <div class="mt-2">
+                      <span class="color-highlight">$74.99</span><small
+                        class="ms-2 text-decoration-line-through color-ternary">$124.99</small>
+                    </div>
+                  </div>
+
+                  <div class="d-inline-flex">
+                    <div class="input-group">
+                      <div class="input-group-prepend">
+                        <button class="input-group-text cart-left-btn bg-white border-end-0 color-shady" id="post">
+                          <span class="material-icons">remove</span>
+                        </button>
+                      </div>
+                      <input type="number"
+                        class="form-control border-start-0 border-end-0 text-center hide-number-controls" value="1"
+                        placeholder="Quantity.." aria-label="Postal Code" aria-describedby="post">
+                      <div class="input-group-append">
+                        <button class="input-group-text cart-right-btn bg-white border-start-0 color-shady" id="post">
+                          <span class="material-icons">add</span>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="list-group list-group-flush border-top mt-5">
+              <li class="list-group-item bg-transparent">
+                <span>Shipping</span>
+                <span class="float-end">$19</span>
+              </li>
+              <li class="list-group-item bg-transparent">
+                <span>Total</span>
+                <span class="float-end">$148.98</span>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <footer class="page-footer">
+      Created by &nbsp;<a href="https://github.com/makafsal"><strong>Afsal K</strong></a>&nbsp;-&nbsp;<a
+        href="https://devchallenges.io">devChallenges.io</a>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

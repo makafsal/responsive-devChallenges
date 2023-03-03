@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
+
+:root {
+  --color-primary: #333333;
+  --color-secondary: #4f4f4f;
+}
+
+body {
+  color: var(--color-primary);
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+small {
+  font-size: 12px;
+}
+
+a {
+  color: initial;
+  text-decoration: none;
+}
+
+.color-primary {
+  color: var(--color-primary);
+}
+
+.color-secondary {
+  color: var(--color-secondary);
+}
+
+.color-ternary {
+  color: #4e5150;
+}
+
+.color-highlight {
+  color: #f2994a;
+}
+
+.color-shady {
+  color: #828282;
+}
+
+.bg-shade {
+  background: #f2f2f2;
+}
+
+.btn-orange {
+  color: #ffffff;
+  background: #f2994a;
+  font-size: 16px;
+  padding: 15px 30px;
+}
+
+.btn-orange:hover {
+  color: #ffffff;
+  background-color: #db8a44;
+}
+
+label {
+  font-size: 12px;
+  color: var(--color-secondary);
+  margin-bottom: 8px;
+}
+
+.form-control {
+  margin-left: -3px !important;
+  color: var(--color-primary);
+  border-radius: 12px;
+  padding: 12px;
+}
+
+.input-group-text {
+  padding: 12px;
+}
+
+.cart-card {
+  border-radius: 12px;
+}
+
+.cart-img {
+  width: 175px;
+  height: auto;
+  border-radius: 22px !important;
+  overflow: hidden;
+}
+
+.cart-left-btn {
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.cart-right-btn {
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+input.hide-number-controls::-webkit-inner-spin-button,
+input.hide-number-controls::-webkit-outer-spin-button {
+  display: none !important;
+}
+
+.page-footer {
+  text-align: center;
+  margin-top: 5rem;
+  padding: 20px 0;
+  color: #bdbdbd;
+}
+
+.page-footer > a {
+  color: #bdbdbd;
+}
